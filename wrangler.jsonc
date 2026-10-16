@@ -1,0 +1,9 @@
+{
+  "$schema": "https://unpkg.com/wrangler@4/config-schema.json",
+  "name": "fmg-everflow-mcp",
+  "main": "src/index.js",
+  "compatibility_date": "2026-10-16",
+  "workers_dev": true,
+  "vars": { "EVERFLOW_REGION": "US" },
+  "observability": { "enabled": false }
+}
