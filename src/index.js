@@ -670,7 +670,9 @@ export default {
           'Everflow returned a non-JSON or malformed response.';
       } else {
         message =
-          'Everflow connection failed before a valid response was received.';
+          `Everflow connection failed: ${error?.name || 'Error'}: ` +
+          `${error?.message || 'Unknown error'}` +
+          (error?.cause?.code ? ` (${error.cause.code})` : '');
       }
 
       message = message
